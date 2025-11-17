@@ -27,7 +27,7 @@ export default function InitialScreen() {
           style={styles.btnLogin}
           onPress={() => {
             setModalVisible(true);
-            setLoginButtonVisible(false);
+            setLoginButtonVisible(true);
           }}
         >
           <Text style={styles.btnTexto}>Fazer Login</Text>

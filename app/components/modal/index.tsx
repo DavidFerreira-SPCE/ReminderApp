@@ -1,8 +1,8 @@
+import { Ionicons } from "@expo/vector-icons";
 import { router } from 'expo-router';
 import React, { useState } from 'react';
 import { Modal, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import styles from "./styles";
-
 interface Props {
     visible: boolean
     onClose: () => void
@@ -47,8 +47,9 @@ export default function ModalLogin({ visible, onClose }: Props) {
                         placeholderTextColor="#999"
                         secureTextEntry
                         value={password}
-                        onChangeText={setPass}
-                    />
+                        onChangeText={setPass}>
+                        <Ionicons name="eye" size={20} color="#006effff" />
+                    </TextInput>
 
                     <TouchableOpacity style={styles.btnSalvar} onPress={fazerLogin}>
                         <Text style={styles.btnSalvarTexto}>Entrar</Text>
