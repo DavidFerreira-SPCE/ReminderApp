@@ -1,14 +1,8 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    overlay: { 
-        flex: 1,
-        backgroundColor: 'rgba(0, 0, 0, 0.17)',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
     modal: {
-        marginTop:'auto',
+        marginTop: 'auto',
         width: '100%',
         backgroundColor: '#fff',
         borderRadius: 1,
@@ -29,11 +23,16 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     input: {
+        flexDirection:'row',
+        alignItems:"center",
+        width: '100%',
+        height: 45,
         borderWidth: 1,
         borderColor: '#ccc',
         borderRadius: 8,
-        padding: 10,
-        marginTop: 10
+        paddingHorizontal: 12,
+        justifyContent: "space-between",
+
     },
     row: {
         flexDirection: 'row',
@@ -48,14 +47,6 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         marginHorizontal: 5
     },
-    selecionadoEntrada: {
-        backgroundColor: '#e6fff0',
-        borderColor: 'green'
-    },
-    selecionadoSaida: {
-        backgroundColor: '#ffe6e6',
-        borderColor: 'red'
-    },
     btnSalvar: {
         marginTop: 20,
         backgroundColor: '#C02636',
@@ -66,6 +57,9 @@ const styles = StyleSheet.create({
     btnSalvarTexto: {
         color: '#fff',
         fontWeight: 'bold'
+    },
+    eyeIconWrapper: {
+        alignItems:'flex-end'
     }
 });
 
