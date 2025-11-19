@@ -50,7 +50,7 @@ export default function HomeScreen() {
                                 </View>
                             </View>
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => router.push('./newRemind')}>
 
                             <View style={styles.boxes}>
                                 <View>
