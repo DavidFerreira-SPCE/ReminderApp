@@ -53,7 +53,7 @@ export const styles = StyleSheet.create({
     },
     ContentHome: {
         flexDirection: "column",
-        marginBottom: -24,
+        marginTop:36,
         borderTopLeftRadius: 24,
         borderTopRightRadius: 24,
         height: '72%',
@@ -62,11 +62,11 @@ export const styles = StyleSheet.create({
     buttonsBox: {
         display: 'flex',
         flexDirection: 'column',
-        gap: -5,
+        gap: 15,
     },
     boxes: {
+        marginVertical: 8,
         flexDirection:'row',
-        marginTop: 30,
         marginHorizontal: 'auto',
         backgroundColor: '#E8EEF3',
         padding: 40,
@@ -74,10 +74,14 @@ export const styles = StyleSheet.create({
         width: '90%'
     },
     receiptIcon:{
-        width: 80 ,
-        height: 88 ,
-        backgroundColor: 'red'
-    }
+        resizeMode:'contain',
+        width: 30 ,
+        height: 40   ,
+        backgroundColor: 'none'
+    },
+    order: {
+        marginHorizontal:10,
+    },
 })
 
 export default styles

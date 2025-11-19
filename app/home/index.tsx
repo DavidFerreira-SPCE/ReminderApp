@@ -35,24 +35,33 @@ export default function HomeScreen() {
 
                 <View style={styles.ContentHome}>
                     <View style={styles.buttonsBox}>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => router.push('./myRecipes')}>
                             <View style={styles.boxes}>
-                                <View style={styles.receiptIcon}>
+                                <View>
+                                    <Image
+                                        source={require("../../assets/images/paper-logo.svg")}
+                                        style={styles.receiptIcon}
+                                    />
                                 </View>
-                                <View style={styles.}>
-                                <Text style={styles.bigText}>Minhas Receitas</Text>
-                                <Text style={styles.smallText}>Acompanhe os medicamentos e gerencie vossos lembretes</Text>
+                                <View style={styles.order}>
+                                    <Text style={styles.bigText}>Minhas Receitas</Text>
+                                    <Text style={styles.smallText}>Acompanhe os medicamentos{"\n"}
+                                        e gerencie vossos lembretes</Text>
                                 </View>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity>
 
                             <View style={styles.boxes}>
-                                <View style={styles.receiptIcon}>
+                                <View>
+                                    <Image
+                                        source={require("../../assets/images/vitamins-logo.svg")}
+                                        style={styles.receiptIcon}
+                                    />
                                 </View>
-                                <View style={styles.}>
-                                <Text style={styles.bigText}>Nova Receita</Text>
-                                <Text style={styles.smallText}>Cadastre novos lembretes de receitas</Text>
+                                <View style={styles.order}>
+                                    <Text style={styles.bigText}>Nova Receita</Text>
+                                    <Text style={styles.smallText}>Cadastre novos lembretes de receitas</Text>
                                 </View>
                             </View>
                         </TouchableOpacity>
