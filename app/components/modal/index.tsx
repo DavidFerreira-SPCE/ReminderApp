@@ -26,7 +26,7 @@ export default function ModalLogin({ visible, onClose }: Props) {
         <Modal visible={visible} transparent animationType="slide">
             <View style={styles.modal}>
                 <View style={styles.header}>
-                    <Text style={styles.title}>Entre para acessar as receitas, SEU FELA</Text>
+                    <Text style={styles.title}>Entre para acessar as receitas</Text>
                     <TouchableOpacity onPress={onClose}>
                         <Text style={styles.close}>✕</Text>
                     </TouchableOpacity>

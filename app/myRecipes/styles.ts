@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    backgroundColor:'#D7E1EA'
   },
   // --- Header Superior (Setas e Botão +) ---
   header: {
@@ -21,7 +22,7 @@ export const styles = StyleSheet.create({
     color: '#000',
   },
   addButton: {
-    backgroundColor: '#007AFF', // Azul do botão de adicionar
+    backgroundColor: '#007AFF',
     borderRadius: 50,
     width: 38,
     height: 38,
@@ -32,25 +33,24 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'normal',
     color: '#fff',
-    // Ajuste fino para centralizar o '+'
+
     lineHeight: 32, 
     marginTop: -4, 
   },
   // --- Textos do Título e Subtítulo ---
   textContainer: {
     paddingHorizontal: 20,
-    paddingVertical: 10,
-    // O fundo azul claro na imagem sugere que estes textos estão numa área separada
-    backgroundColor: '#F0F8FF', // Exemplo de azul claro
+    paddingVertical: 10
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#333',
+    color:'#007AFF',
   },
   subtitle: {
+    fontWeight:200,
     fontSize: 14,
-    color: '#666',
+    color: '#293C4C',
     marginTop: 5,
     marginBottom: 10,
   },
@@ -82,7 +82,7 @@ export const styles = StyleSheet.create({
   },
   deleteButton: {
     position: 'absolute',
-    top: 15,
+    top: 5,
     right: 15,
   },
   deleteIcon: {

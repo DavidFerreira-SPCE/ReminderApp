@@ -9,7 +9,7 @@ export const Styles = StyleSheet.create({
         alignItems: "center",
     },
     logo: {
-        marginTop: '150%',
+        marginTop: '160%',
         resizeMode: 'contain',
         width: 160,
         height: 90,
@@ -19,7 +19,7 @@ export const Styles = StyleSheet.create({
         backgroundColor: '#d62739ff',
         padding: 15,
         borderRadius: 8,
-        marginTop: '180%',
+        marginTop: 20,
         alignItems: 'center'
     },
     btnTexto: {

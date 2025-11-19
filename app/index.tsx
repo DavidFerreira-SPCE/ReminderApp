@@ -10,12 +10,7 @@ export default function InitialScreen() {
   const [loginButtonVisible, setLoginButtonVisible] = useState(true);
   return (
     <SafeAreaView style={styles.body}>
-      <ScrollView
-        contentContainerStyle={{
-          paddingHorizontal: 20,
-          paddingVertical: 10,
-          flexGrow: 1
-        }}>
+      <ScrollView>
         <View>
           <Image
             source={require("../assets/images/reminder-logo.svg")}
@@ -27,6 +22,7 @@ export default function InitialScreen() {
           style={styles.btnLogin}
           onPress={() => {
             setModalVisible(true);
+            loginButtonVisible
             setLoginButtonVisible(true);
           }}
         >
