@@ -22,7 +22,7 @@ export default function NovaReceitaScreen() {
         try {
             // Substitua pela sua URL real. 
             // Lembre-se que emulador/dispositivo requer o IP da máquina, não 'localhost'.
-            const apiUrl = 'http://localhost:3000/lembretes';
+            const apiUrl = 'http://10.113.18.26/lembretes';
 
             const payload = {
                 nomeremedio: nomeRemedio,

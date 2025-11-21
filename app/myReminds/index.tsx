@@ -3,6 +3,7 @@ import React from 'react';
 import { FlatList, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './styles';
+
 // --Exemplo
 const medicamentos = [
     { id: 1, nome: "Nome do remédio", hora: "14:00", frequencia: "A cada 12 horas" },

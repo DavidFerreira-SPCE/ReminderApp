@@ -35,7 +35,7 @@ export default function HomeScreen() {
 
                 <View style={styles.ContentHome}>
                     <View style={styles.buttonsBox}>
-                        <TouchableOpacity onPress={() => router.push('./myRecipes')}>
+                        <TouchableOpacity onPress={() => router.push('./myReminds')}>
                             <View style={styles.boxes}>
                                 <View>
                                     <Image
